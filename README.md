@@ -17,16 +17,16 @@ git checkout -b (branchname)
 合并分支命令:
 git merge 
 
-$ mkdir gitdemo
-$ cd gitdemo/
-$ git init
-Initialized empty Git repository...
-$ touch README
-$ git add README
-$ git commit -m '第一次版本提交'
-[master (root-commit) 3b58100] 第一次版本提交
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 README
+$ mkdir gitdemo  
+$ cd gitdemo/  
+$ git init  
+Initialized empty Git repository...  
+$ touch README  
+$ git add README  
+$ git commit -m '第一次版本提交'  
+[master (root-commit) 3b58100] 第一次版本提交  
+ 1 file changed, 0 insertions(+), 0 deletions(-)  
+ create mode 100644 README  
  
  列出分支
  git branch
@@ -41,3 +41,15 @@ git blame <file> - 以列表形式查看指定文件的历史修改记录。
  
 # 远程仓库
 
+# git github
+ 
+github创建远程仓库（创建了readme文件）
+ 
+本地命令：
+git init 
+git add --all
+git commit -m 'init'
+git remote add origin git@github.com:BenYu2021/xxx.git
+ 
+### 把github远程仓库readme文件合并到本地，远程分支main
+git pull --rebase origin main
