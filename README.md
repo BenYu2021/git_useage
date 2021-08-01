@@ -44,11 +44,14 @@ git blame <file> - 以列表形式查看指定文件的历史修改记录。
 # git与github  
  
 ### github创建远程仓库（创建了readme文件）
+
+### 省略ssh相关过程
  
 ### 本地命令：
 git init   
 git add --all  
-git commit -m 'init'  
+git commit -m 'init'
+### 本地仓库与github仓库关联
 git remote add origin git@github.com:BenYu2021/xxx.git  
  
 ### 把github远程仓库readme文件合并到本地，远程分支main  
