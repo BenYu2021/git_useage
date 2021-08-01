@@ -53,3 +53,5 @@ git remote add origin git@github.com:BenYu2021/xxx.git
  
 ### 把github远程仓库readme文件合并到本地，远程分支main
 git pull --rebase origin main
+### 提交到github
+git push -u origin main
