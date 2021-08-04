@@ -58,3 +58,12 @@ git remote add origin git@github.com:BenYu2021/xxx.git
 git pull --rebase origin main  
 ### 提交到github  
 git push -u origin main
+ 
+ 
+# git commit、git push、git pull、 git fetch、git merge 的含义与区别
+
+git commit：是将本地修改过的文件提交到本地库中；
+git push：是将本地库中的最新信息发送给远程库；
+git pull：是从远程获取最新版本到本地，并自动merge；
+git fetch：是从远程获取最新版本到本地，不会自动merge；
+git merge：是用于从指定的commit(s)合并到当前分支，用来合并两个分支；
