@@ -76,3 +76,21 @@ git merge：是用于从指定的commit(s)合并到当前分支，用来合并�
 git reflog  
 id是你要回退的代码的id  
 git reset --hard [id]       
+ 
+ # git删除已经add的文件
+ 
+ 当git add 某个文件到缓存区，还没有git commit 但是你不想这个文件了
+
+就可以使用git rm命令，两种选择：
+
+git rm --cached “文件路径”，不删除物理文件，仅将该文件从缓存中删除；
+git rm --f “文件路径”，不仅将该文件从缓存中删除，还会将物理文件删除（不会回收到垃圾桶）。
+git删除已经add的文件的两种方法：
+
+用版本库内容清空暂存区，git reset HEAD （谨慎使用）
+
+只把特定文件从暂存区删除，git rm --cached xxx
+ 
+————————————————
+版权声明：本文为CSDN博主「辣爷」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_35536883/article/details/95939294
