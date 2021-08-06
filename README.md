@@ -96,6 +96,6 @@ git删除已经add的文件的两种方法：
 原文链接：https://blog.csdn.net/qq_35536883/article/details/95939294
  
  # ignore路径linux的写法
- # 数据文件 algs4-data 
+ 忽略跟路径resources文件夹
 /resources/
  不能写成./resources
