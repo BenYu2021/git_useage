@@ -67,3 +67,12 @@ git push：是将本地库中的最新信息发送给远程库；
 git pull：是从远程获取最新版本到本地，并自动merge；
 git fetch：是从远程获取最新版本到本地，不会自动merge；
 git merge：是用于从指定的commit(s)合并到当前分支，用来合并两个分支；
+ 
+# 回退到提交的版本
+ 
+# pull错代码，恢复到pull之前 ---本地代码回退
+ 
+先看到提交的代码的id,  
+git reflog  
+id是你要回退的代码的id  
+git reset --hard [id]       
