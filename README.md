@@ -122,3 +122,9 @@ git push -u origin main
 …or import code from another repository  
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.  
 
+# git撤销已经push的提交
+
+git log
+git reset --soft 倒数第二次提交版本
+git push origin master --force
+重新提交
