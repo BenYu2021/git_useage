@@ -128,3 +128,10 @@ git log
 git reset --soft 倒数第二次提交版本id  
 git push origin master --force  
 重新提交  
+ 
+ 
+ # 删除远程仓库
+删除远程仓库你可以使用命令：
+
+git remote rm [别名]
+ 
