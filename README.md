@@ -191,3 +191,10 @@ fd1/*
 
 ```
  
+# ubuntu升级git
+
+sudo apt update  # 更新源
+sudo apt install software-properties-common # 安装 PPA 需要的依赖
+sudo add-apt-repository ppa:git-core/ppa    # 向 PPA 中添加 git 的软件源
+sudo apt-get update
+sudo apt-get install git
