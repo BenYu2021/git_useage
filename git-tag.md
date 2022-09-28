@@ -1,3 +1,4 @@
+```
 一、什么是tag
 
 tag是git版本库的一个标记，指向某个commit的指针。
@@ -76,3 +77,4 @@ git checkout -b <branchName> <tagName>
 命令git tag -a v0.1.0 -m "release 0.1.0 version" 创建附注标签。
 
 命令git checkout [tagname] 切换标签。
+```
