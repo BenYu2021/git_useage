@@ -11,7 +11,12 @@ git branch (branchname)
 git checkout (branchname)
 ## 创建新分支并立即切换到该分支下：
 git checkout -b (branchname) 
- 
+
+## git修改默认分支main
+git config --global init.defaultBranch main
+## 修改当前项目的分支为 main
+git config --global init.defaultBranch main
+
 当你切换分支的时候，Git 会用该分支的最后提交的快照替换你的工作目录的内容， 所以多个分支不需要多个目录。
 
 ## 合并分支命令:
