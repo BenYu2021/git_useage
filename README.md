@@ -1,5 +1,29 @@
 git使用 https://www.runoob.com/git/git-tutorial.html
 
+ssh-keygen -t rsa -b 4096 -C "xx@mail.com"
+
+# 远程仓库
+
+# git与github  
+
+git config --global init.defaultBranch main
+
+### github创建远程仓库（创建了readme文件）
+
+### 省略ssh相关过程
+ 
+### 本地命令：
+git init   
+git add --all  
+git commit -m 'init'
+### 本地仓库与github仓库关联
+git remote add origin git@github.com:BenYu2021/xxx.git  
+ 
+### 把github远程仓库readme文件合并到本地，远程分支main  
+git pull --rebase origin main  
+### 提交到github  
+git push -u origin main
+
 # git_useage
 git 命令行使用方法
 
@@ -44,26 +68,7 @@ git branch -d (branchname)
 git log - 查看历史提交记录。  
 git blame <file> - 以列表形式查看指定文件的历史修改记录。  
  
-# 远程仓库
 
-# git与github  
- 
-### github创建远程仓库（创建了readme文件）
-
-### 省略ssh相关过程
- 
-### 本地命令：
-git init   
-git add --all  
-git commit -m 'init'
-### 本地仓库与github仓库关联
-git remote add origin git@github.com:BenYu2021/xxx.git  
- 
-### 把github远程仓库readme文件合并到本地，远程分支main  
-git pull --rebase origin main  
-### 提交到github  
-git push -u origin main
- 
  
 # git commit、git push、git pull、 git fetch、git merge 的含义与区别
 
